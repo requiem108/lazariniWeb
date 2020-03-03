@@ -1,0 +1,81 @@
+$primary-color:#424242;
+$secondary-color:#fabc2b;
+$elements-color:#4e97a6;
+$background-primary:#fff;
+$colorNav:rgba(42,42,42,.9);
+$fontW: (
+    "regular":300,
+    "medium":500,
+    "bold":700
+);
+
+$letraBlanca: white;
+$FuenteTitulo:"AGENCYB";
+$FuenteCuerpo:"TAHOMA";
+$GradienteTop:#fff;
+$GradienteBot:#8e9eab;
+
+//Gradiente fondo
+@mixin GradienteBase {
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, $GradienteBot,$GradienteTop);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,$GradienteBot,$GradienteTop); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+//FUENTES
+@font-face {
+    font-family: "AGENCYB";
+    src: 
+         url("fonts/AGENCYB.TTF") format("truetype")         
+}
+@font-face {
+    font-family: "TAHOMA";
+    src: 
+         url("fonts/TAHOMA.TTF") format("truetype")         
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@function weight($weightName){
+    @return map-get($font-weights, $weightName);
+}
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+    //
+}
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;    
+}
+
+
+@function set-text-color ($color){
+    @if(lightness($color)>40%){
+        @return #000;
+    }@else {
+        @return #fff;
+    }
+}
+@mixin media-md {
+    @media screen and (min-width:768px) {
+        @content;
+    }    
+}
+@mixin media-lg {
+    @media screen and (min-width:1024px) {
+        @content;
+    }    
+}
+@mixin media-xl {
+    @media screen and (min-width:1600px) {
+        @content;
+    }    
+}

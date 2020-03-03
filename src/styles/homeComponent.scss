@@ -1,0 +1,29 @@
+.homeContent{
+    @include GradienteBase;
+
+
+    &_titulos{
+        h2{
+            font-size: 2.5rem;
+            font-family: $FuenteTitulo;
+        }
+        p{
+            font-size: 1.5rem;
+            font-family: $FuenteTitulo;            
+        }
+    }
+}
+
+@include media-md{
+    .homeContent{
+
+        &_titulos{
+            h2{
+                font-size: 5rem;                 
+            }
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+}

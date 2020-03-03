@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+//Styles
+import './styles/Style.css';
 
 
-import Header from './components/header'
+//App
+import App from './App';
 
 
 
-ReactDOM.render(<Header />, document.getElementById('Header_lazarini'));
+
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 
 
