@@ -2,3 +2,16 @@
 @import 'slide.scss';
 @import 'nav.scss';
 @import 'homeComponent.scss';
+@import 'card.scss';
+@import 'footer.scss';
+@import 'figura.scss';
+@import 'cards.scss';
+
+.mainLazarini{
+    overflow-x: hidden;
+
+}
+//Afcta los partados donde aparese el icono de rejas y el tiutulo de la seccion
+.somosTitulos{
+    margin: 30px 0px;
+}

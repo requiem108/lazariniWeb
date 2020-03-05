@@ -1,6 +1,6 @@
 .homeContent{
     @include GradienteBase;
-
+    padding-bottom: 100px;
 
     &_titulos{
         h2{
@@ -16,7 +16,7 @@
 
 @include media-md{
     .homeContent{
-
+        padding-bottom: 60px;
         &_titulos{
             h2{
                 font-size: 5rem;                 

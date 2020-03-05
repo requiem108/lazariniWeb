@@ -1,0 +1,108 @@
+$sizeRombo: 40px;
+$fontSize: 18px;
+$maxSizeRomb:70px;
+$posicionTopRomTop:-5px;
+$posicionTopRomBot: 26px;
+$posicionTopCard:-25px;
+$backRombo: lighten($primary-color, $amount: 40);
+
+
+
+
+.cuerpoHome{
+    width: 100vw !important;
+    margin-top: 100px;
+    
+    
+
+    .card{
+        max-width: 900px;
+        box-shadow: 0px 10px 19px -8px rgba(0,0,0,0.75);
+        .card-header{
+            background: $background-primary !important;
+            position: relative !important;
+            padding: 0 !important;
+    
+            .cardTitle{                
+                position: absolute;
+                z-index: 1;
+                top: $posicionTopCard;
+
+                &::after{    
+                    content: '';
+                    width: $sizeRombo;
+                    height: $sizeRombo;                    
+                    background: $backRombo;
+                    position: absolute;
+                    top:$posicionTopRomTop;
+                    left: calc(50% - 70px); 
+                    transform: rotate(45deg);
+                    z-index: -1;
+                    box-shadow: 39px -39px $backRombo;
+                }
+                &::before{
+                    content: '';
+                    width: $sizeRombo;
+                    height: $sizeRombo;                    
+                    background: $backRombo;
+                    position: absolute;
+                    top: $posicionTopRomBot;
+                    left: calc(50% - 43px); 
+                    transform: rotate(45deg);
+                    z-index: -1;
+                    box-shadow: 39px -39px $backRombo;
+                }
+                h3{
+                   font-size: $fontSize;
+                   font-family:$FuenteTitulo ;
+                }
+            }
+        }
+        .card-body{
+            margin-top: 50px;
+        }
+
+        p{
+            font-family:$FuenteCuerpo ;
+        }
+    }
+}
+
+@include media-md{
+    .cuerpoHome{   
+        .card{
+            .card-header{
+        
+                .cardTitle{
+                    top: calc(#{$posicionTopCard} + 0px);
+    
+                    &::after{    
+                        content: '';
+                        width: calc(#{$sizeRombo} + 50px);
+                        height: calc(#{$sizeRombo} + 50px); 
+                        top:calc(#{$posicionTopRomTop} - 25px);
+                        left: calc(50% - 150px);                        
+                        box-shadow: 89px -89px $backRombo;
+                    }
+                    &::before{
+                        content: '';
+                        width: calc(#{$sizeRombo} + 50px);
+                        height: calc(#{$sizeRombo} + 50px);
+                        top: calc(#{$posicionTopRomBot} + 15px);
+                        left: calc(50% - 88px); 
+                        transform: rotate(45deg);                        
+                        box-shadow: 89px -89px $backRombo;
+                    }
+                    h3{
+                       font-size: calc(#{$fontSize} + 20px);
+                    }
+                }
+            }
+
+            .card-body{
+                margin-top: 100px;
+            }
+            
+        }
+    }
+}

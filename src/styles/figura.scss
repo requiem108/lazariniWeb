@@ -1,0 +1,78 @@
+$sizeRombo: 40px;
+$fontSize: 18px;
+$maxSizeRomb:70px;
+$posicionTopRomTop:-5px;
+$posicionTopRomBot: 26px;
+$posicionTopCard:-25px;
+$backRombo: lighten($elements-color, $amount: 10);
+
+.figuraLz{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+    &_figura{
+        height: 75px;
+        
+        &::after{    
+            content: '';
+            width: $sizeRombo;
+            height: $sizeRombo;                    
+            background: $backRombo;
+            position: absolute;
+            top:$posicionTopRomTop;
+            left: calc(50% - 70px); 
+            transform: rotate(45deg);
+            z-index: -1;
+            box-shadow: 39px -39px $backRombo;
+        }
+        &::before{
+            content: '';
+            width: $sizeRombo;
+            height: $sizeRombo;                    
+            background: $backRombo;
+            position: absolute;
+            top: $posicionTopRomBot;
+            left: calc(50% - 43px); 
+            transform: rotate(45deg);
+            z-index: -1;
+            box-shadow: 39px -39px $backRombo;
+        }
+    }
+    
+    h3{
+        font-size: 30px;
+        font-family: $FuenteCuerpo;
+        font-weight: map-get($fontW, "bold");
+    }
+}
+
+@include media-md{
+    .figuraLz{
+        margin-top: 75px;
+
+        &_figura{
+            height: 145px;
+            &::after{    
+                content: '';
+                width: calc(#{$sizeRombo} + 50px);
+                height: calc(#{$sizeRombo} + 50px); 
+                top:calc(#{$posicionTopRomTop} - 25px);
+                left: calc(50% - 150px);                        
+                box-shadow: 89px -89px $backRombo;
+            }
+            &::before{
+                content: '';
+                width: calc(#{$sizeRombo} + 50px);
+                height: calc(#{$sizeRombo} + 50px);
+                top: calc(#{$posicionTopRomBot} + 15px);
+                left: calc(50% - 88px); 
+                transform: rotate(45deg);                        
+                box-shadow: 89px -89px $backRombo;
+            }
+        }
+    }
+}
