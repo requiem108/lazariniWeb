@@ -7,11 +7,29 @@
 @import 'figura.scss';
 @import 'cards.scss';
 
+.root{
+    //height: 100vh;
+}
 .mainLazarini{
-    overflow-x: hidden;
+    overflow-x: hidden;  
 
 }
 //Afcta los partados donde aparese el icono de rejas y el tiutulo de la seccion
 .somosTitulos{
     margin: 30px 0px;
+}
+.serviciosTitulos{
+    margin: 30px 0px;
+    min-height: 250px;
+}
+.examapleImgLazarini{
+    max-width: 140px;
+}
+
+@include media-md{
+    .examapleImgLazarini{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }

@@ -7,7 +7,9 @@ import {BrowserRouter as Router,Route} from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer'
 import Home from './components/home';
-import Somos from './components/somos'
+import Somos from './components/somos';
+import Contacto from './components/contacto';
+import Servicios from './components/servicios';
 
 export default class App extends Component {
     render() {
@@ -16,7 +18,8 @@ export default class App extends Component {
                 <Header/>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/somos" component={Somos}/>
-
+                <Route exact path="/contacto" component={Contacto}/>
+                <Route exact path="/servicios" component={Servicios}/>
                 <Footer/>
 
             </Router>

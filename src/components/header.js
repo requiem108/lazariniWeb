@@ -40,6 +40,14 @@ export default class header extends Component {
 
         const navItems = document.querySelectorAll('.menu-nav_item');
 
+        this.setState({
+            showMenu:false,
+            estadoNav:'menu-btn_burguer',
+            nav:'nav',
+            menu_nav:'menu-nav col-12',
+            
+        });
+
         for(let opcion of navItems){
             opcion.classList.remove('active')
         }

@@ -282,6 +282,7 @@
   background: linear-gradient(to top, #8e9eab, #fff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-bottom: 100px;
+  min-height: calc( 83vh - 282px);
 }
 
 .homeContent_titulos h2 {
@@ -406,6 +407,7 @@
 
 footer {
   background: #424242;
+  z-index: 10 !important;
 }
 
 footer h4 {
@@ -513,11 +515,130 @@ footer h4 {
   font-family: "TAHOMA";
 }
 
+.cardsLazarini iframe {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border: none;
+}
+
+.cardsLazarini .card_servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardsLazarini .card_servicios_titulo {
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  width: 95%;
+}
+
+.cardsLazarini .card_servicios_titulo::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 14px 7px 0 7px;
+  border-color: #fabc2b transparent transparent transparent;
+  margin: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.cardsLazarini .card_serviciosSM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardsLazarini .card_serviciosSM_titulo {
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  width: 95%;
+}
+
+.cardsLazarini .card_serviciosSM_tituloLI {
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  width: 95%;
+}
+
+.cardsLazarini .card_serviciosSM_tituloLI::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #fabc2b;
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.cardsLazarini .card-body-lazarini {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  height: 100%;
+}
+
+.cardsLazarini .card-body-lazarini img {
+  width: 100%;
+}
+
 .mainLazarini {
   overflow-x: hidden;
 }
 
 .somosTitulos {
   margin: 30px 0px;
+}
+
+.serviciosTitulos {
+  margin: 30px 0px;
+  min-height: 250px;
+}
+
+.examapleImgLazarini {
+  max-width: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .examapleImgLazarini {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

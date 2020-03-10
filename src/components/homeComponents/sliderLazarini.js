@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class sliderLazarini extends Component {
     render() {
         return (
-            <section className="jumbotron mt-5 slideLazarini">
-            <div className="content d-flex justify-content-center ">
+            <section className="jumbotron mt-5 slideLazarini ">
+            <div className="content d-flex justify-content-center animated fadeIn">
                 <div id="lazariniCarousel" className="carousel slide carousel-fade col-11 " data-ride="carousel">
                     <div className="carousel-inner slideL">
                         
