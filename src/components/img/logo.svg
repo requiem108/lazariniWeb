@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="7.8738mm" height="8.7206mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 787.38 872.06"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#FEFEFE;stroke-width:8.47;stroke-miterlimit:22.9256}
+    .str0 {stroke:#D5D5D5;stroke-width:25.4;stroke-miterlimit:22.9256}
+    .fil4 {fill:none}
+    .fil2 {fill:#FEFEFE}
+    .fil1 {fill:#D7D7D8}
+    .fil3 {fill:#424242}
+    .fil0 {fill:#4A4A4A}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M9.16 23.28l0 526.68c0,0 237.07,286.11 380.99,319.98 152.41,-50.8 380.99,-315.75 380.99,-315.75l0 -530.91 -761.98 0z"/>
+  <path class="fil1" d="M197.83 594.77c42.34,8.46 84.67,0 110.07,-42.34 -152.4,-296.33 -67.73,-364.06 67.73,-372.53 127,8.47 255.4,45.02 93.14,355.6 -8.47,42.33 50.8,67.73 101.6,59.27 16.93,-8.47 25.4,-16.94 25.4,-33.87l-25.4 -16.93c93.13,-177.8 143.93,-457.2 -186.27,-474.14 -279.4,33.87 -321.73,203.2 -169.33,465.67 -16.93,0 -16.94,0 -33.87,0 -5.97,17.89 -16.93,33.87 16.93,59.27z"/>
+  <g id="_591994384">
+   <ellipse class="fil2" cx="212.97" cy="442.37" rx="16.95" ry="16.93"/>
+   <ellipse class="fil2" cx="178.51" cy="353.47" rx="16.95" ry="16.93"/>
+   <ellipse class="fil2" cx="186.98" cy="234.94" rx="16.95" ry="16.93"/>
+   <ellipse class="fil2" cx="263.18" cy="150.27" rx="16.95" ry="16.93"/>
+  </g>
+  <g id="_591993640">
+   <ellipse class="fil3" cx="551.05" cy="438.14" rx="16.95" ry="16.93"/>
+   <ellipse class="fil3" cx="585.51" cy="349.24" rx="16.95" ry="16.93"/>
+   <ellipse class="fil3" cx="577.04" cy="230.71" rx="16.95" ry="16.93"/>
+   <ellipse class="fil3" cx="500.84" cy="146.04" rx="16.95" ry="16.93"/>
+  </g>
+  <g id="_591990568">
+   <polygon class="fil4 str1" points="267.4,429.37 297.33,399.44 327.26,429.37 297.33,459.3 "/>
+   <polygon class="fil4 str1" points="267.4,361.64 297.33,331.71 327.26,361.64 297.33,391.57 "/>
+   <polygon class="fil4 str1" points="267.4,293.91 297.33,263.98 327.26,293.91 297.33,323.84 "/>
+   <polygon class="fil4 str1" points="326.66,429.37 356.59,399.44 386.52,429.37 356.59,459.3 "/>
+   <polygon class="fil4 str1" points="326.66,362.23 356.59,332.3 386.52,362.23 356.59,392.16 "/>
+   <polygon class="fil4 str1" points="326.66,295.09 356.59,265.16 386.52,295.09 356.59,325.02 "/>
+   <polygon class="fil4 str1" points="385.93,429.37 415.86,399.44 445.79,429.37 415.86,459.3 "/>
+   <polygon class="fil4 str1" points="385.93,361.64 415.86,331.71 445.79,361.64 415.86,391.57 "/>
+   <polygon class="fil4 str1" points="385.93,293.91 415.86,263.98 445.79,293.91 415.86,323.84 "/>
+   <polygon class="fil4 str1" points="445.2,429.37 475.13,399.44 505.06,429.37 475.13,459.3 "/>
+   <polygon class="fil4 str1" points="445.2,361.64 475.13,331.71 505.06,361.64 475.13,391.57 "/>
+   <polygon class="fil4 str1" points="445.2,293.91 475.13,263.98 505.06,293.91 475.13,323.84 "/>
+  </g>
+  <g id="_591984880">
+   <ellipse class="fil3" cx="212.97" cy="442.37" rx="16.95" ry="16.93"/>
+   <ellipse class="fil3" cx="178.51" cy="353.47" rx="16.95" ry="16.93"/>
+   <ellipse class="fil3" cx="186.98" cy="234.94" rx="16.95" ry="16.93"/>
+   <ellipse class="fil3" cx="263.18" cy="150.27" rx="16.95" ry="16.93"/>
+  </g>
+ </g>
+</svg>

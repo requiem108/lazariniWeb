@@ -12,7 +12,10 @@ export default class serviciosMovil extends Component {
                 >{this.props.servicio.nombre}</p>
                 <div id={'L'+this.props.servicio.id} className="collapse mb-2">
                     <p className="text-center">{this.props.servicio.description}</p>
-                    <img className="rounded mx-auto d-block" src={`img/servicios/${this.props.servicio.img}.jpg`} alt="concertina"/>
+                    <img className="rounded mx-auto d-block" 
+                    
+                    src={process.env.PUBLIC_URL + '/imgv/servicios/'+this.props.servicio.img+'.jpg'}
+                    alt="servicio imagen"/>
                 </div>
             </li>
                                    

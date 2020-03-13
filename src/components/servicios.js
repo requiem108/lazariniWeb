@@ -5,7 +5,12 @@ import ServiceMovil from './serviciosComponents/serviciosMovil';
 import ServiceInfo from './serviciosComponents/serviceInfoSm';
 import ServiceSM from './serviciosComponents/serviciosSm';
 
+
+
 export default class servicios extends Component {
+
+   
+  
 
     state = {
         servicios: [{nombre:"CONCERTINAS",id:0,img:"concer_lazarini", imgCasa:"cerca-exterior-top", description:"Es el sistema de seguridad perimetral más efectivo y comúnmente usado por el sector residencial, comercial, industrial, militar y gubernamental."},
@@ -17,8 +22,9 @@ export default class servicios extends Component {
             {nombre:"ALAMBRE DE PUAS",id:6, img:"alambre_puas", imgCasa:"cerca-exterior", description:" Las barreras de alambre de espino pueden llegar a tener varios metros de grosor y altura, formando una tupida malla de alambre con púas"},
             {nombre:"CIRCUITO CERRADO",id:7, img:"circuito_cerrado_lazarini", imgCasa:"camaras", description:"Circuito cerrado de televisión o CCTV es una tecnología de videovigilancia diseñada para supervisar una diversidad de ambientes y actividades."}
         ],
-        imgCasa:"casa",
-        imgExample:"Example"       
+        imgCasa:process.env.PUBLIC_URL + '/imgv/servicios/casa.jpg',
+             imgExample:process.env.PUBLIC_URL + '/imgv/servicios/Example.jpg',
+               
     }
 
     //Show card with info of service lazarini in window size SM
@@ -29,11 +35,14 @@ export default class servicios extends Component {
             card.classList.remove("d-sm-block");
         }
         obj.classList.add("d-sm-block");
+
         
-        this.setState({
-            imgCasa:imgCasa,
-            imgExample:imgEx
-        })
+        
+         this.setState({
+             imgCasa:process.env.PUBLIC_URL + '/imgv/servicios/'+imgCasa+'.jpg',
+             imgExample:process.env.PUBLIC_URL + '/imgv/servicios/'+imgEx+'.jpg',
+         })
+    
     }
  
 
@@ -95,8 +104,8 @@ export default class servicios extends Component {
                             
                             <div className="p-2 card-body-lazarini">
                                 
-                                <img  src={"img/servicios/"+this.state.imgCasa+".jpg"} alt=""/>
-                                <img className="img-thumbnail examapleImgLazarini" src={"img/servicios/"+this.state.imgExample+".jpg"} alt="imagen muestra"/>
+                                <img  src={this.state.imgCasa} alt=""/>
+                                <img className="img-thumbnail examapleImgLazarini" src={this.state.imgExample} alt="imagen muestra"/>
 
                             </div>
                         </div>

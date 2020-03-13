@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import{Link} from 'react-router-dom';
+import logo from './img/logo.svg';
 
 export default class header extends Component {
 
@@ -63,7 +64,7 @@ export default class header extends Component {
                 <div className="col-12"> 
 
                 <div className="logo">
-                    <img  src="img/logo.svg" alt="logo softwarewith life"/>
+                    <img  src={logo} alt="logo softwarewith life"/>
 
                     </div>
                         
@@ -77,22 +78,22 @@ export default class header extends Component {
                         <li className={this.state.menu_nav_item + ' active'} 
                         id='inicio'
                         onClick={this.MostrarSeccion}>
-                            <Link className="menu-nav__link " to="/">INICIO</Link>
+                            <Link className="menu-nav__link " to="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/">INICIO</Link>
                         </li>
                         <li className={this.state.menu_nav_item}  
                         id='nosotros'
                         onClick={this.MostrarSeccion}>
-                            <Link className="menu-nav__link" to="/somos">SOMOS</Link>
+                            <Link className="menu-nav__link" to="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/somos">SOMOS</Link>
                         </li>
                         <li className={this.state.menu_nav_item} 
                         id = 'portafolio'
                         onClick={this.MostrarSeccion}>
-                            <Link className="menu-nav__link" to="/Servicios">SERVICIOS</Link>
+                            <Link className="menu-nav__link" to="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/Servicios">SERVICIOS</Link>
                         </li>
                         <li className={this.state.menu_nav_item} 
                         id='contacto'
                         onClick={this.MostrarSeccion}>
-                            <Link className="menu-nav__link"to="/Contacto">CONTACTO</Link>
+                            <Link className="menu-nav__link"to="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/Contacto">CONTACTO</Link>
                         </li>
             
                     </ul>

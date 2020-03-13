@@ -15,11 +15,11 @@ export default class App extends Component {
     render() {
         return (
             <Router>
-                <Header/>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/somos" component={Somos}/>
-                <Route exact path="/contacto" component={Contacto}/>
-                <Route exact path="/servicios" component={Servicios}/>
+                <Header/>                
+                <Route exact path="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/somos" component={Somos}/>
+                <Route exact path="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/contacto" component={Contacto}/>
+                <Route exact path="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/servicios" component={Servicios}/>
+                <Route exact path="/502/WP-Lazarini/frontend-React/mayas-lazarini/build/" component={Home}/>
                 <Footer/>
 
             </Router>
